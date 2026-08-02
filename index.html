@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulip Bloom</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="normlize.css">
+    <link rel="stylesheet" href="intro.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الحاوية الأساسية -->
+    <div class="slider-wrapper">
+        
+        <!-- 1. صفحة الـ Store (على الشمال مخفية في الأول) -->
+        <div class="store-page">
+            <iframe src="store.html" id="storeIframe"></iframe>
+        </div>
+
+        <!-- 2. صفحة الـ Landing (اللي باينة في الأول) -->
+        <div class="landing-page">
+            <div class="logo">Tulip Bloom</div>
+            <div class="tagline">
+                <h2>Inspired by Nature, Crafted <span>for You</span></h2>
+                <div class="btn-container" id="previewBtn">
+                    <div class="button">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+        const previewBtn = document.getElementById("previewBtn");
+        if (previewBtn) {
+            previewBtn.addEventListener("click", () => {
+            document.body.classList.add("slide-active");
+            });
+        }
+        });     
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Store</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="popup.css">
+    
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="fav.html" aria-label="Favorites">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="cart.html" aria-label="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </nav>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="search" placeholder="search flowers..." autocomplete="off">
+            <div id="suggestions"></div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <div class="sections">
+        <a href="roses.html">
+            <img src="imeges/flower1.jpg" alt="Roses">
+            <h4>Roses</h4>
+        </a>
+        <a href="bouquets.html">
+            <img src="imeges/flower2.jpg" alt="Bouquets">
+            <h4>Bouquets</h4>
+        </a>
+        <a href="all.html">
+            <img src="imeges/flower3.jpg" alt="All Flowers">
+            <h4>All Flowers</h4>
+        </a>
+        <a href="sale.html">
+            <img src="imeges/flower4.jpg" alt="Sale">
+            <h4>Sale</h4>
+        </a>
+        <a href="lilies.html">
+            <img src="imeges/flower5.jpg" alt="Lilies">
+            <h4>Lilies</h4>
+        </a>
+        <a href="roses.html">
+            <img src="imeges/flower1.jpg" alt="Roses">
+            <h4>Roses</h4>
+        </a>
+        <a href="bouquets.html">
+            <img src="imeges/flower2.jpg" alt="Bouquets">
+            <h4>Bouquets</h4>
+        </a>
+        <a href="all.html">
+            <img src="imeges/flower3.jpg" alt="All Flowers">
+            <h4>All Flowers</h4>
+        </a>
+        <a href="sale.html">
+            <img src="imeges/flower4.jpg" alt="Sale">
+            <h4>Sale</h4>
+        </a>
+        <a href="lilies.html">
+            <img src="imeges/flower5.jpg" alt="Lilies">
+            <h4>Lilies</h4>
+        </a>
+        <a href="roses.html">
+            <img src="imeges/flower1.jpg" alt="Roses">
+            <h4>Roses</h4>
+        </a>
+        <a href="bouquets.html">
+            <img src="imeges/flower2.jpg" alt="Bouquets">
+            <h4>Bouquets</h4>
+        </a>
+        <a href="all.html">
+            <img src="imeges/flower3.jpg" alt="All Flowers">
+            <h4>All Flowers</h4>
+        </a>
+        <a href="sale.html">
+            <img src="imeges/flower4.jpg" alt="Sale">
+            <h4>Sale</h4>
+        </a>
+        <a href="lilies.html">
+            <img src="imeges/flower5.jpg" alt="Lilies">
+            <h4>Lilies</h4>
+        </a>
+        
+    </div>
+    <!-- Featured Collection -->
+    <h1>Featured Collection</h1>
+    <div class="items">
+        <div class="item" 
+            data-title="Flower Bouquet" 
+            data-price="$40" 
+            data-desc="Fresh Bouquet with elegant wrapping." 
+            data-img="imeges/item1.png">
+            <i class="fa-solid fa-heart heart"></i>
+            <img src="imeges/item1.png" alt="Flower Bouquet">
+            <p>Flower Bouquet</p>
+            <div>
+                <p class="view">View More</p>
+                <p>$40</p>
+            </div>
+        </div>
+
+        <div class="item" 
+            data-title="Pink Tulip" 
+            data-price="$25" 
+            data-desc="Fresh Pink Tulip with elegant wrapping." 
+            data-img="imeges/item2.png">
+            <i class="fa-solid fa-heart heart"></i>
+            <img src="imeges/item2.png" alt="Pink Tulip">
+            <p>Pink Tulip</p>
+            <div>
+                <p class="view">View More</p>
+                <p>$25</p>
+            </div>
+        </div>
+
+        <div class="item" 
+            data-title="Pink Lilies" 
+            data-price="$35" 
+            data-desc="Fresh pink lilies with elegant wrapping." 
+            data-img="imeges/item3.png">
+            <i class="fa-solid fa-heart heart"></i>
+            <img src="imeges/item3.png" alt="Pink Lilies">
+            <p>Pink Lilies</p>
+            <div>
+                <p class="view">View More</p>
+                <p>$35</p>
+            </div>
+        </div>
+
+        <div class="item" 
+            data-title="Orange Bouquet" 
+            data-price="$50" 
+            data-desc="Fresh Bouquet with elegant wrapping." 
+            data-img="imeges/item4.png">
+            <i class="fa-solid fa-heart heart"></i>
+            <img src="imeges/item4.png" alt="Orange Bouquet">
+            <p>Orange Bouquet</p>
+            <div>
+                <p class="view">View More</p>
+                <p>$50</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <div class="fitem active">
+            <a href="store.html" class="f"><i class="fa-solid fa-house"></i></a>
+            <p class="f">home</p>
+        </div>
+        <div class="fitem">
+            <a href="fav.html" class="f"><i class="fa-regular fa-heart"></i></a>
+            <p class="f">wishlist</p>
+        </div>
+        <div class="fitem">
+            <a href="cart.html" class="f"><i class="fa-solid fa-cart-shopping"></i></a>
+            <p class="f">cart</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal / Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <img id="popup-img" src="" alt="Popup Product Image">
+            <h2 id="popup-title"></h2>
+            <p id="popup-price"></p>
+            <p id="popup-desc"></p>
+            <div class="quantity">
+                <button id="minus">-</button>
+                <span id="count">1</span>
+                <button id="plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="products.js"></script>
+    <script src="store.js"></script>
+    <script src="popup.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishlist</title>
+    <link rel="stylesheet" href="roses.css">
+    
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 100vh;
+            overflow-y: hidden;
+        }
+        #fav{
+            overflow-y: auto;
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top:1px solid rgb(211, 210, 210);
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--back-ground);
+        }
+        footer .fitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        width: 20%;
+
+        }
+
+        footer .fitem p {
+        margin: 4px 0 0 0;
+        color: #373333;
+        font-weight: bold;
+        font-size: 12px;
+        }
+        footer .fitem a{
+            color: rgb(55, 51, 51); 
+            font-size: 20px;
+        }
+        footer .fitem.active{
+        border-top:3px solid var(--alt-color) 
+        }
+        footer .fitem.active i,
+        footer .fitem.active p{
+            color:var(--alt-color);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>wishlist</h1>
+    <div id ="fav" class="items">
+
+    </div>
+    <div class="popup" id="popup">
+
+        <div class="popup-content">
+
+            <span class="close">&times;</span>
+
+            <img id="popup-img">
+
+            <h2 id="popup-title"></h2>
+
+            <p id="popup-price"></p>
+
+            <p id="popup-desc"></p>
+
+            <div class="quantity">
+
+                <button id="minus">-</button>
+
+                <span id="count">1</span>
+
+                <button id="plus">+</button>
+
+            </div>
+
+            <button>Add To Cart</button>
+
+        </div>
+
+    </div>
+    <footer>
+            <div class="fitem ">
+                <a href="store.html" class="f"><i class="fa-solid fa-house"></i></a>
+                <p class="f">home</p>
+            </div>
+            <div class="fitem  active">
+                <a href="fav.html" class="f"><i class="fa-regular fa-heart"></i></a>
+                <p class="f">wishlist</p>
+            </div>
+            
+            <div class="fitem ">
+                <a href="cart.html" class="f"><i class="fa-solid fa-cart-shopping"></i></a>
+                <p class="f">cart</p>
+            </div>
+    </footer>
+    <script src="products.js"></script>
+    <script src="store.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
