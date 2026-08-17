@@ -1,0 +1,151 @@
+:root {
+    --main-color: #8B3F45;
+    --alt-color: #6D262D;
+    --alt2-color: #A55E64;
+    --alt3-color: #C18A8F;
+    --main-font: black;
+    --alt-font: #8A7A7A;
+    --back-ground: #F8F3F2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.left{
+    background-image: url(imeges/login.png);
+    background-size: cover;
+    background-position: center;
+}
+.right .box .content{
+    margin-top: 20%;
+}
+.right .box{
+    width: 90%;
+    height: 90%;
+    margin: auto ;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(75, 47, 47, 0.4);
+}
+.right .box h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--alt-color);
+}
+.right .box p{
+    width: 250px;
+    color:rgb(38, 37, 37);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.right .box form label:not(:last-of-type){
+    display: block;
+    margin-bottom: 10px; 
+}
+.right .box form div{
+    width: 85%;
+    margin: auto;
+    position: relative; 
+}
+.right .box form div input:not(#remember){
+    width: 100%;
+    border: 1px solid --alt-font;
+    padding: 5px 30px;
+    outline: none;
+    color: var(--main-color);
+}
+.right .box form div input::placeholder{
+    color: var(--main-color);
+    font-size: 12px;
+}
+.right .box form div input:focus:not(#remember){
+    outline: var(--main-color) 1px solid;
+}
+.right .box form div .fa-lock,
+.right .box form div .fa-user
+{
+    position: absolute;
+    z-index: 10;
+    color: rgb(109, 107, 107);
+    left:2%;
+    top:25px
+}
+.right .box form div  .fa-eye{
+    position: absolute;
+    z-index: 10;
+    color: rgb(109, 107, 107);
+    left:95%;
+    top:25px;
+    cursor: pointer;
+}
+.remember{
+    display: flex;
+    align-items: center;
+    gap:2px;
+}
+
+.remember input[type="checkbox"]{
+    accent-color: var(--main-color);
+    
+}
+
+section a {
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    color: var(--alt-color);
+
+}
+section{
+    width: 85%;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.right .box form   #submit{
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--alt-color);
+    color: var(--back-ground);
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.right .box form  p:last-child a{
+    color: #6D262D;
+    cursor: pointer;
+}
+
+#emailError,
+#passwordError,
+#loginError{
+    margin-top: 5px;
+    color:red;
+    font-size: 13px;
+}
+

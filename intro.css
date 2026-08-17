@@ -16,7 +16,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     font-family: sans-serif;
 }
@@ -33,7 +33,7 @@ html, body {
 /* صفحة الـ Landing */
 .landing-page {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("imeges/intro.png");
     background-size: cover;
     background-position: center;
@@ -68,7 +68,7 @@ html, body {
 .tagline {
     width: 400px;
     left: 15%;
-    top: 30%;
+    top: calc((100% - 400px) / 2);
     font-size: 38px;
 }
 
@@ -116,6 +116,15 @@ html, body {
     width: 100%;
     height: 100%;
     border: none;
+}
+.landing-page {
+    width: 100vw;
+    height: 100vh;
+    /* هنا حطّي التنسيق والألوان والخلفية الخاصة بصفحة البداية بتاعتك */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* الحركة المعاكسة: بتسحب الـ Landing جهة اليمين وتظهر الـ Store */
